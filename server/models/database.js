@@ -1,26 +1,17 @@
 const mongoose = require('mongoose');
-// mongoose.connect(process.env.MONGODB_URI,{
-//      useNewUrlParser:true,useUnifiedTopology:true,
-// });
-const URI="mongodb+srv://yogeshkumar99:sahilkumar9873@cluster0.i4f7j.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config() ;
+
+const MONGO_DB="mongodb://yogeshkumar99:sahilkumar9873@cluster0-shard-00-00.i4f7j.mongodb.net:27017,cluster0-shard-00-01.i4f7j.mongodb.net:27017,cluster0-shard-00-02.i4f7j.mongodb.net:27017/blog-app?ssl=true&replicaSet=atlas-nw7ao3-shard-0&authSource=admin&retryWrites=true&w=majority"
 
 
-// mongoose.connect(db).then(()=>{
-//      console.log('connection successful');
-// }).catch((error)=>{
-//      console.log(`connection FUCK`);
-// })
+
 const connectdb = async()=>{
-await mongoose.connect(URI,
-    { useunifiedTopology:true,
-     useNewUrlParser: true
+ mongoose.connect(MONGO_DB,
+    { 
     });
     console.log('db connected..!')
 }
 require('./Category');
 require('./recepie');
 module.exports=connectdb; 
-// db.on('error',console.error.bind(console,'connection error:'));
-// db.once('open',function(){
-//      console.log('Connected')
-// });
+

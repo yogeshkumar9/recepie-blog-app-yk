@@ -162,182 +162,182 @@ exports.submitRecipeOnPost = async (req, res) => {
   }
 };
 
-// async function insertDymmyCategoryData(){
-//   try {
-//     await Category.insertMany([
-//       {
-//         "name": "Thai",
-//         "image": "thai-food.jpg"
-//       },
-//       {
-//         "name": "American",
-//         "image": "american-food.jpg"
-//       }, 
-//       {
-//         "name": "Chinese",
-//         "image": "chinese-food.jpg"
-//       },
-//       {
-//         "name": "Mexican",
-//         "image": "mexican-food.jpg"
-//       }, 
-//       {
-//         "name": "Indian",
-//         "image": "indian-food.jpg"
-//       },
-//       {
-//         "name": "Spanish",
-//         "image": "spanish-food.jpg"
-//       }
-//     ]);
-//   } catch (error) {
-//     console.log('err', + error)
-//   }
-// }
+async function insertDymmyCategoryData(){
+  try {
+    await Category.insertMany([
+      {
+        "name": "Thai",
+        "image": "thai-food.jpg"
+      },
+      {
+        "name": "American",
+        "image": "american-food.jpg"
+      }, 
+      {
+        "name": "Chinese",
+        "image": "chinese-food.jpg"
+      },
+      {
+        "name": "Mexican",
+        "image": "mexican-food.jpg"
+      }, 
+      {
+        "name": "Indian",
+        "image": "indian-food.jpg"
+      },
+      {
+        "name": "Spanish",
+        "image": "spanish-food.jpg"
+      }
+    ]);
+  } catch (error) {
+    console.log('err', + error)
+  }
+}
 
-// insertDymmyCategoryData();
+insertDymmyCategoryData();
 
-// async function insertDymmyRecipeData(){
-//   try {
-//     await recepie.insertMany([
-//       { 
-//         "name": "Indian-style chip butty",
-//         "description": `“These spiced, crispy hot potato balls squashed into buns with mango and pomegranate chutney, fresh mint yoghurt and Bombay mix sprinkles are to die for. Ridiculously delicious. ”`,
-//         "email": "yogesh@gmail.com",
-//         "ingredients": [
-//           "400 g potatoes",
-//           "400 g sweet potatoes",
-//           "3 cloves of garlic",
-//           "3 cm piece of ginger",
-//           "1 fresh red chilli",
-//           "1 large knob of unsalted butter",
-//           "1 teaspoon garam masala",
-//           "1 teaspoon mustard seeds",
-//           "2 tablespoons mango chutney",
-//           "½ a pomegranate",
-//           "1 bunch of fresh mint , (30g)",
-//             "4 tablespoons natural yoghurt",
-//             "4 soft rolls",
-//             "20 g Bombay mix",
+async function insertDymmyRecipeData(){
+  try {
+    await recepie.insertMany([
+      { 
+        "name": "Indian-style chip butty",
+        "description": `“These spiced, crispy hot potato balls squashed into buns with mango and pomegranate chutney, fresh mint yoghurt and Bombay mix sprinkles are to die for. Ridiculously delicious. ”`,
+        "email": "yogesh@gmail.com",
+        "ingredients": [
+          "400 g potatoes",
+          "400 g sweet potatoes",
+          "3 cloves of garlic",
+          "3 cm piece of ginger",
+          "1 fresh red chilli",
+          "1 large knob of unsalted butter",
+          "1 teaspoon garam masala",
+          "1 teaspoon mustard seeds",
+          "2 tablespoons mango chutney",
+          "½ a pomegranate",
+          "1 bunch of fresh mint , (30g)",
+            "4 tablespoons natural yoghurt",
+            "4 soft rolls",
+            "20 g Bombay mix",
            
-//         ],
-//         "category": "Indian", 
-//         "image": "Indian-chip butty.webp",
-//       },
-//       { 
-//         "name": "Chinese steak & tofu stew",
-//         "description": `“Ring the changes with this lovely, light nutritious beef stew – it really hits the spot. ”`,
-//       "email": "yogesh@gmail.com",
-//         "ingredients": [
-//           "1. 250g rump or sirloin steak",
-//           "2 cloves of garlic",
-//           " 4 cm piece of ginger",
-//           "2 fresh red chilli",
-//            "1 bunch of spring onions",
-//             "2 large carrots",
-//           "250g mooli or radishes",
-//           "1 heaped teaspoon Szechuan peppercorns",
-//           "groundnut oil",
-//           "2 tablespoons Chinese chilli bean paste, (find it in Asian supermarkets)",
-//            "1 litre veg stock",
-//             "1 x 400g tin of aduki beans",
-//           "1 tablespoon cornflour",
-//             "200g tenderstem broccoli",
+        ],
+        "category": "Indian", 
+        "image": "Indian-chip butty.webp",
+      },
+      { 
+        "name": "Chinese steak & tofu stew",
+        "description": `“Ring the changes with this lovely, light nutritious beef stew – it really hits the spot. ”`,
+      "email": "yogesh@gmail.com",
+        "ingredients": [
+          "1. 250g rump or sirloin steak",
+          "2 cloves of garlic",
+          " 4 cm piece of ginger",
+          "2 fresh red chilli",
+           "1 bunch of spring onions",
+            "2 large carrots",
+          "250g mooli or radishes",
+          "1 heaped teaspoon Szechuan peppercorns",
+          "groundnut oil",
+          "2 tablespoons Chinese chilli bean paste, (find it in Asian supermarkets)",
+           "1 litre veg stock",
+            "1 x 400g tin of aduki beans",
+          "1 tablespoon cornflour",
+            "200g tenderstem broccoli",
 
-//         ],
-//         "category": "Chinese", 
-//         "image": "Chinese steak & tofu stew.webp",
-//       },
-//       { 
-//                 "name": "Crab cakes",
-//                 "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
-//                 "email": "yogesh@gmail.com",
-//                 "ingredients": [
-//                  " 3 spring onions",
-//                  "½ a bunch of fresh flat-leaf parsley",
-//                  "1 large free-range egg",
-//                  "750 g cooked crabmeat , from sustainable sources",
-//                  "300 g mashed potatoes",
-//                  "1 teaspoon ground white pepper",
-//                  "1 teaspoon cayenne pepper",
-//                  "plain flour , for dusting",
-//                  "olive oil",
-//                   "watercress",
-//                  "tartare sauce",
+        ],
+        "category": "Chinese", 
+        "image": "Chinese steak & tofu stew.webp",
+      },
+      { 
+                "name": "Crab cakes",
+                "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
+                "email": "yogesh@gmail.com",
+                "ingredients": [
+                 " 3 spring onions",
+                 "½ a bunch of fresh flat-leaf parsley",
+                 "1 large free-range egg",
+                 "750 g cooked crabmeat , from sustainable sources",
+                 "300 g mashed potatoes",
+                 "1 teaspoon ground white pepper",
+                 "1 teaspoon cayenne pepper",
+                 "plain flour , for dusting",
+                 "olive oil",
+                  "watercress",
+                 "tartare sauce",
         
-//                 ],
-//                 "category": "American", 
-//                 "image": "Crab-cakes.webp",
-//               },
-//               { 
-//                 "name": "Quick Mexican breakfast",
-//                 "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
-//                 "email": "yogesh@gmail.com",
-//                 "ingredients": [
-//                  " 3 spring onions",
-//                  "½ a bunch of fresh flat-leaf parsley",
-//                  "1 large free-range egg",
-//                  "750 g cooked crabmeat , from sustainable sources",
-//                  "300 g mashed potatoes",
-//                  "1 teaspoon ground white pepper",
-//                  "1 teaspoon cayenne pepper",
-//                  "plain flour , for dusting",
-//                  "olive oil",
-//                   "watercress",
-//                  "tartare sauce",
+                ],
+                "category": "American", 
+                "image": "Crab-cakes.webp",
+              },
+              { 
+                "name": "Quick Mexican breakfast",
+                "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
+                "email": "yogesh@gmail.com",
+                "ingredients": [
+                 " 3 spring onions",
+                 "½ a bunch of fresh flat-leaf parsley",
+                 "1 large free-range egg",
+                 "750 g cooked crabmeat , from sustainable sources",
+                 "300 g mashed potatoes",
+                 "1 teaspoon ground white pepper",
+                 "1 teaspoon cayenne pepper",
+                 "plain flour , for dusting",
+                 "olive oil",
+                  "watercress",
+                 "tartare sauce",
         
-//                 ],
-//                 "category": "Mexican", 
-//                 "image": "Mexicanbreakfast.webp",
-//               },
-//               { 
-//                 "name": " Mexican-chorizo",
-//                 "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
-//                 "email": "yogesh@gmail.com",
-//                 "ingredients": [
-//                  " 3 spring onions",
-//                  "½ a bunch of fresh flat-leaf parsley",
-//                  "1 large free-range egg",
-//                  "750 g cooked crabmeat , from sustainable sources",
-//                  "300 g mashed potatoes",
-//                  "1 teaspoon ground white pepper",
-//                  "1 teaspoon cayenne pepper",
-//                  "plain flour , for dusting",
-//                  "olive oil",
-//                   "watercress",
-//                  "tartare sauce",
+                ],
+                "category": "Mexican", 
+                "image": "Mexicanbreakfast.webp",
+              },
+              { 
+                "name": " Mexican-chorizo",
+                "description": `“TSPRING ONION, MASHED POTATO & CAYENNE ”`,
+                "email": "yogesh@gmail.com",
+                "ingredients": [
+                 " 3 spring onions",
+                 "½ a bunch of fresh flat-leaf parsley",
+                 "1 large free-range egg",
+                 "750 g cooked crabmeat , from sustainable sources",
+                 "300 g mashed potatoes",
+                 "1 teaspoon ground white pepper",
+                 "1 teaspoon cayenne pepper",
+                 "plain flour , for dusting",
+                 "olive oil",
+                  "watercress",
+                 "tartare sauce",
               
-//                 ],
-//                 "category": "Mexican", 
-//                 "image": "Mexican2.webp",
-//               },
-//               { 
-//                 "name": " KETO MEXICAN CHICKEN CASSEROLE ",
-//                 "description": `“The following Mexican chicken casserole combines chicken for protein, riced cauliflower for consistency, and an assortment of fatty ingredients to fuel your mood. Best of all, it tastes great and greatly improves perceived food pleasure.”`,
-//                 "email": "yogesh@gmail.com",
-//                 "ingredients": [
-//                  " 3 spring onions",
-//                  "½ a bunch of fresh flat-leaf parsley",
-//                  "1 large free-range egg",
-//                  "750 g cooked crabmeat , from sustainable sources",
-//                  "300 g mashed potatoes",
-//                  "1 teaspoon ground white pepper",
-//                  "1 teaspoon cayenne pepper",
-//                  "plain flour , for dusting",
-//                  "olive oil",
-//                   "watercress",
-//                  "tartare sauce",
+                ],
+                "category": "Mexican", 
+                "image": "Mexican2.webp",
+              },
+              { 
+                "name": " KETO MEXICAN CHICKEN CASSEROLE ",
+                "description": `“The following Mexican chicken casserole combines chicken for protein, riced cauliflower for consistency, and an assortment of fatty ingredients to fuel your mood. Best of all, it tastes great and greatly improves perceived food pleasure.”`,
+                "email": "yogesh@gmail.com",
+                "ingredients": [
+                 " 3 spring onions",
+                 "½ a bunch of fresh flat-leaf parsley",
+                 "1 large free-range egg",
+                 "750 g cooked crabmeat , from sustainable sources",
+                 "300 g mashed potatoes",
+                 "1 teaspoon ground white pepper",
+                 "1 teaspoon cayenne pepper",
+                 "plain flour , for dusting",
+                 "olive oil",
+                  "watercress",
+                 "tartare sauce",
               
-//                 ],
-//                 "category": "Mexican", 
-//                 "image": "Mexican3.webp",
-//               },
+                ],
+                "category": "Mexican", 
+                "image": "Mexican3.webp",
+              },
 
-//     ]);
-//   } catch (error) {
-//     console.log('err', + error)
-//   }
-// };
-// insertDymmyRecipeData();
+    ]);
+  } catch (error) {
+    console.log('err', + error)
+  }
+};
+insertDymmyRecipeData();
 
 
